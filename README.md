@@ -13,7 +13,7 @@ The commands in `math.sty` are designed to make it easy to typeset math in LaTeX
 - Use the commands defined in `math.sty` 
 – Standard math commands should not be affected so you can continue to use those too
 
-## Most useful commands
+## Some useful commands
 
 ### Statistical operators
 
