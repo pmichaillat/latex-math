@@ -1,6 +1,6 @@
-# latex-math
+# LaTeX Commands to Typeset Math
 
-LaTeX commands that make math easy to type and easy to read.
+This repository contains LaTeX commands to easily typeset mathematical expressions, and easily read them.
 
 ## Goal
 
