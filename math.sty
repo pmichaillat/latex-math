@@ -60,11 +60,11 @@
 \IfNoValueTF{#2}{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}%
 {\,\mathbb{E}\IfValueT{#1}{_{#1}}{\bp{#2}}}}
 
- % Probability operator:
- % * \P produces P
- % * \P[x] produces P_x
- % * \P{Y} produces P(Y)
- % * \P[x]{Y} produces P_x(Y)
+% Probability operator:
+% * \P produces P
+% * \P[x] produces P_x
+% * \P{Y} produces P(Y)
+% * \P[x]{Y} produces P_x(Y)
 \RenewDocumentCommand{\P}{o g}{%
 \IfNoValueTF{#2}{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}%
 {\,\mathbb{P}\IfValueT{#1}{_{#1}}{\bp{#2}}}}
