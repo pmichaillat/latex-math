@@ -12,9 +12,9 @@ The commands are designed to make it easy to write math in LaTeX. They are also 
 
 + Brackets: parenthesis, square, curly, norm, absolute value
 + Accents: overline, underline, hat, tilde
-+ Operators: log, exponential, max, min, trace, variance, covariance, correlation, standard deviation
-+ Expectation
-+ Probability
++ Simple operators: log, exponential, max, min, trace, variance, covariance, correlation, standard deviation
++ Expectation operator
++ Probability operator
 + Derivatives: partial, total, elasticities, in text or display
 + Blackboard letters: R, N, Z, Q, C, I
 + Greek letters: most lowercase letters and key uppercase letters
