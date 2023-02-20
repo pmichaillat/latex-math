@@ -1,4 +1,4 @@
-# LaTeX Commands to Typeset Math
+# LaTeX Commands to Write Math
 
 This repository contains commands to easily write mathematical expressions in LaTeX, and easily read them.
 
@@ -6,9 +6,9 @@ This repository contains commands to easily write mathematical expressions in La
 
 The commands are documented at https://pascalmichaillat.org/d3/.
 
-## Overview
+## Features
 
-The commands are designed to make it easy to write math in LaTeX. They are also designed so the formulas in LaTeX look as much as possible like the formulas on paper. The following commands are included:
+Commands to write the following mathematical object are included:
 
 + Brackets: parenthesis, square, curly, norm, absolute value
 + Accents: overline, underline, hat, tilde
@@ -20,12 +20,12 @@ The commands are designed to make it easy to write math in LaTeX. They are also 
 + Greek letters: most lowercase letters and key uppercase letters
 + Calligraphic letters: all uppercase letters
 
-## Installation
+## Usage
 
-+ Add `math.sty` to the folder with your LaTeX files
-+ Insert `\usepackage{math}` in the preamble of your document
-+ Use the commands defined in `math.sty` 
-+ Existing math commands are not affected, so you can continue to use those too
++ Add `math.sty` to the folder with your LaTeX files.
++ Insert `\usepackage{math}` in the preamble of your LaTeX document.
++ Use the commands defined in `math.sty`.
++ Existing math commands are not affected, so you can continue to use those too.
 
 ## License
 
