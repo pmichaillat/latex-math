@@ -8,21 +8,21 @@ The commands are documented at https://pascalmichaillat.org/d3/.
 
 ## Features
 
-Commands to write the following mathematical object are included:
+Commands to write the following mathematical objects are included:
 
 + Brackets: parenthesis, square, curly, norm, absolute value
 + Accents: overline, underline, hat, tilde
-+ Simple operators: log, exponential, max, min, trace, variance, covariance, correlation, standard deviation
++ Simple operators: log, exponential, max, min, trace, variance, covariance, correlation, standard deviation, standard error
 + Expectation operator
 + Probability operator
 + Derivatives: partial, total, elasticities, in text or display
 + Blackboard letters: R, N, Z, Q, C, I
-+ Greek letters: most lowercase letters and key uppercase letters
 + Calligraphic letters: all uppercase letters
++ Greek alphabet: most lowercase letters and key uppercase letters
 
 ## Usage
 
-+ Add `math.sty` to the folder with your LaTeX files.
++ Add `math.sty` to the folder with your LaTeX document.
 + Insert `\usepackage{math}` in the preamble of your LaTeX document.
 + Use the commands defined in `math.sty`.
 + Existing math commands are not affected, so you can continue to use those too.
