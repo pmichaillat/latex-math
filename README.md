@@ -29,4 +29,4 @@ Commands to write the following mathematical objects are included:
 
 ## License
 
-The content of this repository is licensed under the terms of the [MIT License](https://opensource.org/license/mit-license-php/).
+The content of this repository is licensed under the terms of the MIT License.
