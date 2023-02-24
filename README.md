@@ -6,9 +6,7 @@ This repository contains commands to easily write mathematical expressions in La
 
 The commands are documented at https://pascalmichaillat.org/d3/.
 
-## Features
-
-Commands to write the following mathematical objects are included:
+## Included commands
 
 + Brackets: parenthesis, square, curly, norm, absolute value
 + Accents: overline, underline, hat, tilde
@@ -22,7 +20,7 @@ Commands to write the following mathematical objects are included:
 
 ## Usage
 
-+ Add `math.sty` to the folder with your LaTeX document.
++ Add the LaTeX style file `math.sty` to the folder with your LaTeX document.
 + Insert `\usepackage{math}` in the preamble of your LaTeX document.
 + Use the commands defined in `math.sty`.
 + Existing math commands are not affected, so you can continue to use those too.
