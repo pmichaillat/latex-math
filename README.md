@@ -11,8 +11,7 @@ The commands are documented at https://pascalmichaillat.org/d3/.
 + Brackets: parenthesis, square, curly, norm, absolute value
 + Accents: overline, underline, hat, tilde
 + Simple operators: log, exponential, max, min, trace, variance, covariance, correlation, standard deviation, standard error
-+ Expectation operator
-+ Probability operator
++ Statistical operators: expectation,probability
 + Derivatives: partial, total, elasticities, in text or display
 + Blackboard letters: R, N, Z, Q, C, I
 + Calligraphic letters: all uppercase letters
