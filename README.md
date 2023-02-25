@@ -8,14 +8,14 @@ The commands are documented at https://pascalmichaillat.org/d3/.
 
 ## Included commands
 
-+ Brackets: parenthesis, square, curly, norm, absolute value
-+ Accents: overline, underline, hat, tilde
-+ Simple operators: log, exponential, max, min, trace, variance, covariance, correlation, standard deviation, standard error
-+ Statistical operators: expectation, probability
-+ Derivatives: partial, total, elasticities, in text or display
++ Brackets: parenthesis, square, curly, absolute value, norm, floor
++ Operators: logarithm, exponential, indicator, trace, variance, covariance, correlation, standard deviation, standard error, maximum, minimum, expectation, probability
++ Derivatives: partial, ordinary, elasticities, in display and text
++ Statistical commands: independent and identically distributed variables, almost sure convergence
 + Blackboard letters: R, N, Z, Q, C, I
 + Calligraphic letters: all uppercase letters
 + Greek alphabet: most lowercase letters and key uppercase letters
++ Accents: overline, underline, hat, tilde
 
 ## Usage
 
