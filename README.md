@@ -6,16 +6,18 @@ This repository contains commands to easily write mathematical expressions in La
 
 The commands are documented at https://pascalmichaillat.org/d3/.
 
-## Included commands
+## Features
 
-+ Brackets: parenthesis, square, curly, absolute value, norm, floor
-+ Operators: logarithm, exponential, indicator, trace, variance, covariance, correlation, standard deviation, standard error, maximum, minimum, expectation, probability
-+ Derivatives: partial, ordinary, elasticities, in display and text
-+ Statistical commands: independent and identically distributed variables, almost sure convergence
-+ Blackboard letters: R, N, Z, Q, C, I
-+ Calligraphic letters: all uppercase letters
-+ Greek alphabet: most lowercase letters and key uppercase letters
-+ Accents: overline, underline, hat, tilde
+The commands are tailored to write math in economics and other social sciences, although they might also be helpful to write math in other fields. The commands introduce the following functionalities:
+
++ Easily insert brackets that scale automatically
++ Easily list arguments of operators (expectation, probability, min, max, exponential, log, and so on), with surrounding brackets that scale automatically
++ Easily write derivatives and elasticities, in display and text
++ Easily type statistical commands (independent and identically distributed variables, almost sure convergence)
++ Easily type key blackboard letters
++ Easily type uppercase calligraphic letters
++ Easily type Greek letters
++ Easily insert accents that scale automatically
 
 ## Usage
 
