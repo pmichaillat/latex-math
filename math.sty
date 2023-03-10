@@ -85,16 +85,33 @@
 
 %% Derivatives
 
-\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\pdx}[2]{\partial #1/\partial #2}
-\newcommand{\pdk}[3]{\left.\frac{\partial #1}{\partial #2}\right\vert_{#3}} 
-\newcommand{\pdkx}[3]{\left.\partial #1/\partial #2\right\vert_{#3}}
+% Ordinary derivative
 \newcommand{\od}[2]{\frac{d #1}{d #2}}
 \newcommand{\odx}[2]{d #1/d #2}
-\newcommand{\pe}[2]{\frac{\partial\ln{#1}}{\partial\ln{#2}}}
-\newcommand{\oe}[2]{\frac{d\ln{#1}}{d\ln{#2}}}
-\newcommand{\pex}[2]{\partial\ln(#1)/\partial\ln(#2)}
+
+% Ordinary elasticity
+\renewcommand{\oe}[2]{\frac{d\ln{#1}}{d\ln{#2}}}
 \newcommand{\oex}[2]{d\ln(#1)/d\ln(#2)}
+
+% Partial derivative in display
+\NewDocumentCommand{\pd}{g g g}{%
+\IfNoValueTF{#3}{\frac{\partial #1}{\partial #2}}%
+{\left.\frac{\partial #1}{\partial #2}\right\vert_{#3}}}
+
+% Partial derivative in text
+\NewDocumentCommand{\pdx}{g g g}{%
+\IfNoValueTF{#3}{\partial #1/\partial #2}%
+{\left.\partial #1/\partial #2\right\vert_{#3}}}
+
+% Partial elasticity in display
+\NewDocumentCommand{\pe}{g g g}{%
+\IfNoValueTF{#3}{\frac{\partial\ln{#1}}{\partial\ln{#2}}}%
+{\left.\frac{\partial\ln{#1}}{\partial\ln{#2}}\right\vert_{#3}}}
+
+% Partial elasticity in text
+\NewDocumentCommand{\pex}{g g g}{%
+\IfNoValueTF{#3}{\partial\ln(#1)/\partial\ln(#2)}%
+{\left.\partial\ln(#1)/\partial\ln(#2)\right\vert_{#3}}}
 
 %% Statistical commands
 
@@ -171,6 +188,7 @@
 \def\t{\theta}
 \def\T{\Theta}
 \def\vt{\vartheta}
+\def\U{\Upsilon}
 \def\x{\xi}
 \def\X{\Xi}
 \def\z{\zeta}

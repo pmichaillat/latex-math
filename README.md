@@ -1,6 +1,6 @@
-# LaTeX Commands to Write Math
+# Minimalist LaTeX Commands to Write Math
 
-This repository contains commands to easily write mathematical expressions in LaTeX, and easily read them.
+This repository contains a collection of minimalist commands to easily write mathematical expressions with LaTeX—while automatically respecting the rules of mathematical typography.
 
 ## Documentation
 
@@ -24,7 +24,7 @@ The commands are tailored to write math in economics and other social sciences, 
 + Add the LaTeX style file `math.sty` to the folder with your LaTeX document.
 + Insert `\usepackage{math}` in the preamble of your LaTeX document.
 + Use the commands defined in `math.sty`.
-+ Existing math commands are not affected, so you can continue to use those too.
++ Existing math commands are not affected, so you can continue to use those too. A few text commands are modified and cannot be used (such as `\oe`, `\o`, `\b`, `\P`). These text commands insert symbols that are rarely used in scientific writing, so hopefully the modification is not problematic. 
 
 ## License
 
