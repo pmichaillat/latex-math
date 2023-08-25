@@ -1,6 +1,6 @@
 # Minimalist LaTeX Commands to Write Math
 
-This repository contains a collection of minimalist commands to easily write mathematical expressions with LaTeX—while automatically respecting the rules of mathematical typography.
+This repository contains a collection of minimalist commands to easily write mathematical expressions with [LaTeX](https://github.com/latex3/latex2e)—while automatically respecting the rules of mathematical typography.
 
 ## Documentation
 
@@ -8,7 +8,7 @@ The commands are documented at https://pascalmichaillat.org/d3/.
 
 ## Features
 
-The commands are tailored to write math in economics and other social sciences, although they might also be helpful to write math in other fields. The commands introduce the following functionalities:
+The commands are tailored to write math in economics, although they might also be helpful to write math in other fields. The commands introduce the following functionalities:
 
 + Easily insert brackets that scale automatically
 + Easily list arguments of operators (expectation, probability, min, max, exponential, log, and so on), with surrounding brackets that scale automatically
@@ -24,8 +24,7 @@ The commands are tailored to write math in economics and other social sciences, 
 + Add the LaTeX style file `math.sty` to the folder with your LaTeX document.
 + Insert `\usepackage{math}` in the preamble of your LaTeX document.
 + Use the commands defined in `math.sty`.
-+ Existing math commands continue to work as usual. 
-+ A few text commands are modified (such as `\oe`, `\o`, `\b`, `\P`) and do not produce their usual output. These commands used to insert text symbols that are rarely used in scientific writing, and now insert common mathematical symbols, so hopefully the modification is not problematic. 
++ Existing math commands continue to work as usual, with the exception of a few text commands that do not produce their usual output (such as `\oe`, `\o`, `\b`, `\P`). These commands used to insert text symbols that are rarely used in scientific writing, and now insert common mathematical symbols, so hopefully the modification is not problematic. 
 
 ## License
 
