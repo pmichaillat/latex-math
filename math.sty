@@ -1,4 +1,4 @@
-%% --- Brackets ---
+% --- Brackets ---
 
 \newcommand{\bc}[1]{\left\lbrace #1 \right\rbrace} 
 \newcommand{\bp}[1]{\left( #1 \right)} 
@@ -8,7 +8,7 @@
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\of}[1]{{\left( #1 \right)}}
 
-%% --- Operators ---
+% --- Operators ---
 
 \usepackage{xparse}
 
@@ -83,7 +83,7 @@
 \IfNoValueTF{#2}{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}%
 {\,\mathbb{P}\IfValueT{#1}{_{#1}}{\bp{#2}}}}
 
-%% --- Derivatives ---
+% --- Derivatives ---
 
 % Ordinary derivative in display
 \NewDocumentCommand{\od}{o g g}{%
@@ -117,13 +117,13 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \IfNoValueTF{#3}{\partial\ln(#1)/\partial\ln(#2)}%
 {\left.\partial\ln(#1)/\partial\ln(#2)\right\vert_{#3}}}
 
-%% --- Statistical commands ---
+% --- Statistical commands ---
 
 \DeclareMathOperator*{\ess}{ess}
 \newcommand{\iid}{\mathbin{\overset{iid}{\sim}}}
 \newcommand{\as}{\mathbin{\overset{as}{\to}}}
 
-%% --- Blackboard letters ---
+% --- Blackboard letters ---
 
 \def\R{\mathbb{R}}
 \def\N{\mathbb{N}}
@@ -132,7 +132,7 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\C{\mathbb{C}}
 \def\I{\mathbb{I}}
 
-%% --- Caligraphic letters ---
+% --- Caligraphic letters ---
 
 \def\Ac{\mathcal{A}}
 \def\Bc{\mathcal{B}}
@@ -161,7 +161,7 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\Yc{\mathcal{Y}}
 \def\Zc{\mathcal{Z}}
 
-%% --- Greek letters ---
+% --- Greek letters ---
 
 \def\a{\alpha}
 \def\b{\beta}
@@ -197,14 +197,14 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\X{\Xi}
 \def\z{\zeta}
 
-%% --- Accents ---
+% --- Accents ---
 
 \newcommand{\ol}[1]{\overline{#1}}
 \newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\wh}[1]{\widehat{#1}}
 \newcommand{\wt}[1]{\widetilde{#1}}
 
-%% --- Complex numbers ---
+% --- Complex numbers ---
 
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
