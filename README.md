@@ -26,6 +26,10 @@ The commands are tailored to write math in economics, although they might also b
 + Use the [commands](https://pascalmichaillat.org/d3/) defined in `math.sty`.
 + Existing LaTeX commands continue to work as usual, with the exception of a few text commands that do not produce their usual output (such as `\oe`, `\o`, `\P`). These commands used to insert text symbols that are rarely used in scientific writing, and now insert common mathematical symbols, so hopefully the modification is not problematic. 
 
+## Software
+
+These commands were developed on a Mac with the MacTeX-2021 distribution, and they continue to work with the MacTeX-2023 distribution. Hopefully, they should also work on other machines and with other distributions.
+
 ## License
 
 The content of this repository is licensed under the terms of the MIT License.
