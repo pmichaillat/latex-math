@@ -23,7 +23,7 @@ The commands are tailored to write math in economics, although they might also b
 
 + Add the LaTeX style file `math.sty` to the folder with your LaTeX document.
 + Insert `\usepackage{math}` in the preamble of your LaTeX document.
-+ Use the commands defined in `math.sty`.
++ Use the [commands](https://pascalmichaillat.org/d3/) defined in `math.sty`.
 + Existing LaTeX commands continue to work as usual, with the exception of a few text commands that do not produce their usual output (such as `\oe`, `\o`, `\P`). These commands used to insert text symbols that are rarely used in scientific writing, and now insert common mathematical symbols, so hopefully the modification is not problematic. 
 
 ## License
