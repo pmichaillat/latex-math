@@ -8,7 +8,7 @@ The commands are documented at https://pascalmichaillat.org/d3/.
 
 ## Features
 
-The commands are tailored to write math in economics, although they might also be helpful to write math in other fields. The commands introduce the following functionalities:
+The commands introduce the following functionalities:
 
 + Easily insert brackets that scale automatically
 + Easily list arguments of operators (expectation, probability, min, max, exponential, log, and so on), with surrounding brackets that scale automatically
