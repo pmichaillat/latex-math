@@ -58,28 +58,40 @@
 \IfNoValueTF{#1}{\operatorname{se}}%
 {\,{\operatorname{se}}{\bp{#1}}}}
 
-% Maximum
+% Maximum / Supremum / Limit Supremum
 \let\oldmax\max
 \RenewDocumentCommand{\max}{o g}{%
 \IfNoValueTF{#2}{\oldmax\IfValueT{#1}{_{#1}}}%
 {\,{\oldmax\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
 
+\let\oldsup\sup
+\RenewDocumentCommand{\sup}{o g}{%
+\IfNoValueTF{#2}{\oldsup\IfValueT{#1}{_{#1}}}%
+{\,{\oldsup\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
+
+\let\oldlimsup\limsup
+\RenewDocumentCommand{\limsup}{o g}{%
+\IfNoValueTF{#2}{\oldlimsup\IfValueT{#1}{_{#1}}}%
+{\,{\oldlimsup\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
+
 % Argmax
 \DeclareMathOperator*{\argmax}{argmax}
 
-% Minimum
+% Minimum / Infimum / Limit Infimum
 \let\oldmin\min
 \RenewDocumentCommand{\min}{o g}{%
 \IfNoValueTF{#2}{\oldmin\IfValueT{#1}{_{#1}}}%
 {\,{\oldmin\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
 
-% Argmin
-\DeclareMathOperator*{\argmin}{argmin}
+\let\oldinf\inf
+\RenewDocumentCommand{\inf}{o g}{%
+\IfNoValueTF{#2}{\oldinf\IfValueT{#1}{_{#1}}}%
+{\,{\oldinf\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
 
-% Expectation
-\NewDocumentCommand{\E}{o g}{%
-\IfNoValueTF{#2}{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}%
-{\,\mathbb{E}\IfValueT{#1}{_{#1}}{\bp{#2}}}}
+\let\oldliminf\liminf
+\RenewDocumentCommand{\liminf}{o g}{%
+\IfNoValueTF{#2}{\oldliminf\IfValueT{#1}{_{#1}}}%
+{\,{\oldliminf\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
 
 % Probability
 \RenewDocumentCommand{\P}{o g}{%
