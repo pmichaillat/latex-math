@@ -33,11 +33,6 @@
 \IfNoValueTF{#1}{\operatorname{tr}}%
 {\,{\operatorname{tr}}{\bp{#1}}}}
 
-% Variance
-\NewDocumentCommand{\var}{g}{%
-\IfNoValueTF{#1}{\operatorname{var}}%
-{\,{\operatorname{var}}{\bp{#1}}}}
-
 % Covariance
 \NewDocumentCommand{\cov}{g}{%
 \IfNoValueTF{#1}{\operatorname{cov}}%
@@ -93,10 +88,44 @@
 \IfNoValueTF{#2}{\oldliminf\IfValueT{#1}{_{#1}}}%
 {\,{\oldliminf\IfValueT{#1}{_{#1}}}{\bc{#2}}}}
 
-% Probability
-\RenewDocumentCommand{\P}{o g}{%
-\IfNoValueTF{#2}{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}%
-{\,\mathbb{P}\IfValueT{#1}{_{#1}}{\bp{#2}}}}
+% Expectation and Conditional Expectation
+\NewDocumentCommand{\expec}{o g g}{%
+  \IfNoValueTF{#2}{%
+    \operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}%
+  }{%
+    \IfNoValueTF{#3}{%
+      \,\mathbb{E}\IfValueT{#1}{_{#1}}{\bs{#2}}
+    }{%
+      \,\mathbb{E}\IfValueT{#1}{_{#1}}{\bs{#2 \ |\ #3}}
+    }
+  }
+}
+
+% Probability and Conditional Probability
+\RenewDocumentCommand{\P}{o g g}{%
+  \IfNoValueTF{#2}{%
+    \operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}%
+  }{%
+    \IfNoValueTF{#3}{%
+      \,\mathbb{P}\IfValueT{#1}{_{#1}}{\bs{#2}}
+    }{%
+      \,\mathbb{P}\IfValueT{#1}{_{#1}}{\bs{#2 \ |\ #3}}
+    }
+  }
+}
+
+% Variance and Conditional Variance
+\NewDocumentCommand{\var}{o g g}{%
+  \IfNoValueTF{#2}{%
+    \operatorname{\operatorname{var}}\IfValueT{#1}{_{#1}}%
+  }{%
+    \IfNoValueTF{#3}{%
+      \,\operatorname{var}\IfValueT{#1}{_{#1}}{\bp{#2}}
+    }{%
+      \,\operatorname{var}\IfValueT{#1}{_{#1}}{\bp{#2 \ |\ #3}}
+    }
+  }
+}
 
 % --- Derivatives ---
 
