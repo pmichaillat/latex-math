@@ -1,6 +1,6 @@
-# Minimalist LaTeX Commands to Write Math
+# LaTeX Commands to Write Math
 
-This repository contains a collection of minimalist commands to easily write mathematical expressions with [LaTeX](https://github.com/latex3/latex2e)—while automatically respecting the rules of mathematical typography.
+This repository contains a collection of commands to easily write mathematical expressions with [LaTeX](https://github.com/latex3/latex2e)—while automatically respecting the rules of mathematical typography.
 
 ## Documentation
 
@@ -13,7 +13,7 @@ The commands introduce the following functionalities:
 + Easily insert brackets that scale automatically
 + Easily list arguments of operators (expectation, probability, min, max, exponential, log, and so on), with surrounding brackets that scale automatically
 + Easily write derivatives and elasticities, in display and text
-+ Easily type statistical commands (independent and identically distributed variables, almost sure convergence)
++ Easily type statistical commands (independent and identically distributed variables, various limits)
 + Easily type key blackboard letters
 + Easily type uppercase calligraphic letters
 + Easily type Greek letters
@@ -33,3 +33,7 @@ These commands were developed on a Mac with the MacTeX-2021 distribution, and th
 ## License
 
 The content of this repository is licensed under the terms of the MIT License.
+
+## Acknowledgements
+
+Thank you to [Kyle Butts](https://github.com/kylebutts) for contributing additional operators and limits.
