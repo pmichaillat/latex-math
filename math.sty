@@ -10,7 +10,9 @@
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 \newcommand{\normx}[1]{\lVert #1 \rVert}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
 \newcommand{\floorx}[1]{\lfloor #1 \rfloor}
+\newcommand{\ceilx}[1]{\lceil #1 \rceil}
 \newcommand{\of}[1]{{\left( #1 \right)}}
 
 % --- Operators ---
@@ -133,7 +135,7 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 
 \DeclareMathOperator*{\ess}{ess}
 \newcommand{\iid}{\mathbin{\overset{iid}{\sim}}}
-\newcommand{\as}{\mathbin{\overset{as}{\to}}}
+\newcommand{\asto}{\mathbin{\overset{as}{\to}}}
 \newcommand{\pto}{\mathbin{\overset{p}{\to}}}
 \newcommand{\dto}{\mathbin{\overset{d}{\to}}}
 
@@ -184,13 +186,16 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\D{\Delta}
 \def\uD{\upDelta}
 \def\e{\epsilon}
+\def\ve{\varepsilon}
 \def\f{\phi}
 \def\vf{\varphi}
 \def\F{\Phi}
 \def\g{\gamma}
 \def\G{\Gamma}
 \def\h{\eta}
+\def\i{\iota}
 \def\k{\kappa}
+\def\vk{\varkappa}
 \def\l{\lambda}
 \def\L{\Lambda}
 \def\m{\mu}
@@ -199,13 +204,16 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\O{\Omega}
 \def\vp{\varpi}
 \def\p{\psi}
+\def\P{\Psi}
 \def\r{\rho}
+\def\vr{\varrho}
 \def\s{\sigma}
 \def\vs{\varsigma}
 \def\S{\Sigma}
 \def\t{\theta}
-\def\T{\Theta}
 \def\vt{\vartheta}
+\def\T{\Theta}
+\def\u{\upsilon}
 \def\U{\Upsilon}
 \def\x{\xi}
 \def\X{\Xi}
@@ -214,6 +222,7 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 % --- Accents ---
 
 \newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\oa}[1]{\overrightarrow{#1}}
 \newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\wh}[1]{\widehat{#1}}
 \newcommand{\wt}[1]{\widetilde{#1}}
