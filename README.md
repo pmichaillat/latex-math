@@ -33,7 +33,3 @@ These commands were developed on a Mac with the MacTeX-2021 distribution, and th
 ## License
 
 The content of this repository is licensed under the terms of the MIT License.
-
-## Acknowledgements
-
-Thank you to [Kyle Butts](https://github.com/kylebutts) for contributing additional operators and limits.
