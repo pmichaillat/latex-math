@@ -19,11 +19,15 @@
 
 % Logarithm
 \let\oldln\ln
-\RenewDocumentCommand{\ln}{g}{\IfNoValueTF{#1}{\oldln}{\,{\oldln}{\bp{#1}}}}
+\RenewDocumentCommand{\ln}{g}{%
+\IfNoValueTF{#1}{\oldln}%
+{\,{\oldln}{\bp{#1}}}}
 
 % Exponential
 \let\oldexp\exp
-\RenewDocumentCommand{\exp}{g}{\IfNoValueTF{#1}{\oldexp}{\,{\oldexp}{\bp{#1}}}}
+\RenewDocumentCommand{\exp}{g}{%
+\IfNoValueTF{#1}{\oldexp}%
+{\,{\oldexp}{\bp{#1}}}}
 
 % Indicator
 \NewDocumentCommand{\ind}{g}{%
