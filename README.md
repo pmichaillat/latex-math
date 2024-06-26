@@ -6,19 +6,6 @@ This repository contains a collection of commands to easily write mathematical e
 
 The commands are documented at https://pascalmichaillat.org/d3/.
 
-## Features
-
-The commands introduce the following functionalities:
-
-+ Easily insert brackets that scale automatically
-+ Easily list arguments of operators (expectation, probability, min, max, exponential, log, and so on), with surrounding brackets that scale automatically
-+ Easily write derivatives and elasticities, in display and text
-+ Easily type statistical commands (independent and identically distributed variables, various limits)
-+ Easily type key blackboard letters
-+ Easily type uppercase calligraphic letters
-+ Easily type Greek letters
-+ Easily insert accents that scale automatically
-
 ## Usage
 
 + Add the LaTeX style file `math.sty` to the folder with your LaTeX document.
@@ -28,7 +15,7 @@ The commands introduce the following functionalities:
 
 ## Software
 
-These commands were developed on a Mac with the MacTeX-2021 distribution, and they continue to work with the MacTeX-2023 distribution. Hopefully, they should also work on other machines and with other distributions.
+The commands were tested and validated on a Mac with the MacTeX-2023 distribution. While they should also work on other operating systems and with other LaTeX distributions, compatibility cannot be guaranteed. Users on Windows or Linux systems, or those using different LaTeX distributions, may need to make minor adjustments. Please report any compatibility issues or bugs you encounter to help improve cross-platform support.
 
 ## License
 
