@@ -17,7 +17,7 @@ The commands are documented at https://pascalmichaillat.org/d3/.
 
 The commands were developed, tested, and validated on a Mac with the MacTeX-2023 distribution. 
 
-While the commands should also work on other operating systems and with other LaTeX distributions, compatibility cannot be guaranteed. Users on Windows or Linux systems, or those using different LaTeX distributions, may need to make minor adjustments. Please report any compatibility issues or bugs you encounter to help improve cross-platform support.
+While the commands should also work on other operating systems and with other LaTeX distributions, compatibility cannot be guaranteed. Users on Windows or Linux systems, or those using different LaTeX distributions, may need to make minor adjustments. [Please report](https://github.com/pmichaillat/latex-math/issues) any compatibility issues or bugs to help improve cross-platform support.
 
 ## License
 
