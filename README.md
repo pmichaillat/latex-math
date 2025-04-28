@@ -21,4 +21,4 @@ While the commands should also work on other operating systems and with other La
 
 ## License
 
-The content of this repository is licensed under the terms of the MIT License.
+This repository is licensed under the [MIT License](LICENSE.md).
