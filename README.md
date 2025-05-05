@@ -15,9 +15,9 @@ The commands are documented at https://pascalmichaillat.org/e/.
 
 ## Software
 
-The commands were developed, tested, and validated on a Mac with the MacTeX-2023 distribution. 
+The commands were developed and validated with TeX Live 2023 on MacOS. 
 
-While the commands should also work on other operating systems and with other LaTeX distributions, compatibility cannot be guaranteed. Users on Windows or Linux systems, or those using different LaTeX distributions, may need to make minor adjustments. [Please report](https://github.com/pmichaillat/latex-math/issues) any compatibility issues or bugs to help improve cross-platform support.
+Other LaTeX distributions and operating systems may require minor adjustments. Please [report any issues](https://github.com/pmichaillat/latex-math/issues) to help improve compatibility
 
 ## License
 
