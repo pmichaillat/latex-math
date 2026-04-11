@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+
+% Only load your style file (math.sty in same folder)
+\usepackage{math}
+
+\begin{document}
+
+\section*{Smoke test for \texttt{math.sty}}
+
+This file exercises all commands in \texttt{math.sty} to check that the style works out of the box.
+
+\subsection*{Basic brackets}
+
+\[
+\bc{x^2+y},\quad
+\bp{x^2+y},\quad
+f\of{x^2+y},\quad
+\bs{x^2+y},\quad
+\ba{x^2+y}
+\]
+
+\subsection*{Other brackets}
+
+\[
+\abs{x_t+y^2}, \norm{x_t+y^2}, \floor{x_t+y^2}, \ceil{x_t+y^2}\dots
+\]
+
+\subsection*{Functions and operators}
+\[
+\ln x,\ \ln{x},\ 
+\exp x,\ \exp{x},\ 
+\ind,\ \ind{A},\ 
+\tr,\ \tr{M}
+\]
+\[
+\var,\ \var{X},\ \var[t]{X},\quad
+\cov,\ \cov{X,Y},\ \cov[t]{X,Y}
+\]
+\[
+\corr,\ \corr{X,Y},\ \corr[t]{X,Y},\quad
+\sd,\ \sd{X},\ \sd[t]{X},\quad
+\se,\ \se{X},\ \se[t]{X}
+\]
+\[
+\max,\ \max\{x,y^2\},\ \max{x,y^2},\ \max[n]{y^2_n},\quad
+\min,\ \min{x,y^2},\ \min[n]{y^2_n}
+\]
+\[
+\sup,\ \sup{S},\ \sup[n]{y_n},\quad
+\inf,\ \inf{S},\ \inf[n]{y_n}
+\]
+\[
+\argmax_{x\in X} f(x),\quad
+\argmin_{x\in X} f(x)
+\]
+\[
+\E,\ \E[t],\ \E{X^2},\ \E[t]{X_t\mid B},\quad
+\P,\ \P[t],\ \P{A\mid B},\ \P[t]{A_t\mid B}
+\]
+
+\subsection*{Derivatives}
+\[
+\od{y}{x},\ \od[n]{y}{x},\ 
+\odx{y}{x},\ \odx[n]{y}{x}
+\]
+\[
+\pd{y}{x},\ \pd[n]{y}{x},\ \pd{y}{x}{z},\quad
+\pdx{y}{x},\ \pdx[n]{y}{x},\ \pdx{y}{x}{z}
+\]
+\[
+\oe{y}{x},\ \oex{y}{x},\ 
+\pe{y}{x},\ \pe{y}{x}{z},\ 
+\pex{y}{x},\ \pex{y}{x}{z}
+\]
+
+\subsection*{Logical and statistical relations}
+\[
+A \iff B,\qquad A \implies B
+\]
+\[
+X_n \iid \Nc(0,1),\quad
+X_n \asto X,\quad
+X_n \pto X,\quad
+X_n \dto X
+\]
+\[
+\ess\sup_{x\in \Sc} f(x),\qquad
+\ess\inf_{x\in \Sc} f(x)
+\]
+
+\subsection*{Accents}
+\[
+\ul{x(t)},\ \oa{x(t)},\ \ol{x(t)},\ \wh{x(t)},\ \wt{x(t)}
+\]
+
+\subsection*{Complex parts}
+\[
+\Re(z),\ \Im(z)
+\]
+
+\subsection*{Blackboard-bold letters}
+\[
+\R,\ \N,\ \Z,\ \Q,\ \C
+\]
+
+\subsection*{Greek letters}
+
+\[
+\a,\b,\c,\d,\e,\ve,\f,\vf,\g,\h,\i,\k,\l,\m,\n,\o,\vp,\p,\r,\s,\t,\vt,\u,\x,\z
+\]
+\[
+\D,\F,\G,\L,\O,\S,\T,\U,\X
+\]
+
+\subsection*{Calligraphic letters}
+\[
+\Ac,\Bc,\Cc,\Dc,\Ec,\Fc,\Gc,\Hc,\Ic,\Jc,\Kc,\Lc,\Mc,\Nc,\Oc,\Pc,\Qc,\Rc,\Sc,\Tc,\Uc,\Vc,\Wc,\Xc,\Yc,\Zc
+\]
+
+\end{document}

@@ -1,4 +1,18 @@
-% Define custom commands with complex argument specifications
+% ---- Load required packages ----
+
+% Load math fonts
+\usepackage{amsmath}
+
+% Load blackboard bold font
+\usepackage{dsfont}
+
+% Load math symbols
+\usepackage{amssymb}
+
+% Load custom accents for symbols in math mode
+\usepackage{accents}
+
+% Define custom commands with complex arguments
 \usepackage{xparse}
 
 % ---- Commands for brackets ----
@@ -16,31 +30,19 @@
 \newcommand{\bs}[1]{\left[ #1 \right]} 
 
 % Angle brackets
-\newcommand{\ba}[1]{\left< #1 \right>} 
+\newcommand{\ba}[1]{\left\langle #1 \right\rangle} 
 
-% Absolute valuec in display
+% Absolute value
 \newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
 
-% Absolute value in text
-\newcommand{\absx}[1]{\lvert #1 \rvert}
-
-% Norm in display
+% Norm
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 
-% Norm in text
-\newcommand{\normx}[1]{\lVert #1 \rVert}
-
-% Floor in display
+% Floor
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 
-% Floor in text
-\newcommand{\floorx}[1]{\lfloor #1 \rfloor}
-
-% Ceiling  in display
+% Ceiling
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
-
-% Ceiling in text
-\newcommand{\ceilx}[1]{\lceil #1 \rceil}
 
 % ---- Commands for functions and operators ----
 
@@ -48,72 +50,72 @@
 \let\oldln\ln
 \RenewDocumentCommand{\ln}{g}{%
 \IfNoValueTF{#1}{\oldln}%
-{\,{\oldln}\of{#1}}}
+{\oldln\!\of{#1}}}
 
 % Exponential
 \let\oldexp\exp
 \RenewDocumentCommand{\exp}{g}{%
 \IfNoValueTF{#1}{\oldexp}%
-{\,{\oldexp}\of{#1}}}
+{\oldexp\!\of{#1}}}
 
 % Indicator
 \NewDocumentCommand{\ind}{g}{%
-\IfNoValueTF{#1}{\operatorname{\mathbb{1}}}%
-{\,\mathbb{1}\of{#1}}}
+\IfNoValueTF{#1}{\operatorname{\mathds{1}}}%
+{\,\mathds{1}\of{#1}}}
 
 % Trace
 \NewDocumentCommand{\tr}{g}{%
 \IfNoValueTF{#1}{\operatorname{tr}}%
-{\,{\operatorname{tr}}\of{#1}}}
+{\operatorname{tr}\!\of{#1}}}
 
 % Variance
 \NewDocumentCommand{\var}{o g}{%
 \IfNoValueTF{#2}{\operatorname{var}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{var}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{var}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Covariance
 \NewDocumentCommand{\cov}{o g}{%
 \IfNoValueTF{#2}{\operatorname{cov}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{cov}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{cov}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Correlation
 \NewDocumentCommand{\corr}{o g}{%
 \IfNoValueTF{#2}{\operatorname{corr}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{corr}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{corr}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Standard deviation
 \NewDocumentCommand{\sd}{o g}{%
 \IfNoValueTF{#2}{\operatorname{sd}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{sd}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{sd}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Standard error
 \NewDocumentCommand{\se}{o g}{%
 \IfNoValueTF{#2}{\operatorname{se}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{se}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{se}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Maximum
 \let\oldmax\max
 \RenewDocumentCommand{\max}{o g}{%
 \IfNoValueTF{#2}{\oldmax\IfValueT{#1}{_{#1}}}%
-{\,{\oldmax\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\oldmax\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Supremum
 \let\oldsup\sup
 \RenewDocumentCommand{\sup}{o g}{%
 \IfNoValueTF{#2}{\oldsup\IfValueT{#1}{_{#1}}}%
-{\,{\oldsup\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\oldsup\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Minimum
 \let\oldmin\min
 \RenewDocumentCommand{\min}{o g}{%
 \IfNoValueTF{#2}{\oldmin\IfValueT{#1}{_{#1}}}%
-{\,{\oldmin\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\oldmin\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Infimum
 \let\oldinf\inf
 \RenewDocumentCommand{\inf}{o g}{%
 \IfNoValueTF{#2}{\oldinf\IfValueT{#1}{_{#1}}}%
-{\,{\oldinf\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\oldinf\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Arg functions
 \DeclareMathOperator*{\argmax}{argmax}
@@ -122,30 +124,30 @@
 % Expectation
 \NewDocumentCommand{\E}{o g}{%
 \IfNoValueTF{#2}{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Probability
 \RenewDocumentCommand{\P}{o g}{%
 \IfNoValueTF{#2}{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % ---- Commands for derivatives ----
 
 % Ordinary derivative in display
-\NewDocumentCommand{\od}{o g g}{%
+\NewDocumentCommand{\od}{o m m}{%
 \frac{d\IfValueT{#1}{^{#1}} #2}{d #3\IfValueT{#1}{^{#1}}}}
 
 % Ordinary derivative in text
-\NewDocumentCommand{\odx}{o g g}{%
+\NewDocumentCommand{\odx}{o m m}{%
 d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 
 % Partial derivative in display
-\NewDocumentCommand{\pd}{o g g g}{%
+\NewDocumentCommand{\pd}{o m m g}{%
 \IfNoValueTF{#4}{\frac{\partial\IfValueT{#1}{^{#1}} #2}{\partial #3\IfValueT{#1}{^{#1}}}}%
 {\left.\frac{\partial\IfValueT{#1}{^{#1}} #2}{\partial #3\IfValueT{#1}{^{#1}}}\right\vert_{#4}}}
 
 % Partial derivative in text
-\NewDocumentCommand{\pdx}{o g g g}{%
+\NewDocumentCommand{\pdx}{o m m g}{%
 \IfNoValueTF{#4}{\partial\IfValueT{#1}{^{#1}} #2/\partial #3\IfValueT{#1}{^{#1}}}%
 {\left.\partial\IfValueT{#1}{^{#1}} #2/\partial #3\IfValueT{#1}{^{#1}}\right\vert_{#4}}}
 
@@ -156,12 +158,12 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \newcommand{\oex}[2]{d\ln(#1)/d\ln(#2)}
 
 % Partial elasticity in display
-\NewDocumentCommand{\pe}{g g g}{%
+\NewDocumentCommand{\pe}{m m g}{%
 \IfNoValueTF{#3}{\frac{\partial\ln{#1}}{\partial\ln{#2}}}%
 {\left.\frac{\partial\ln{#1}}{\partial\ln{#2}}\right\vert_{#3}}}
 
 % Partial elasticity in text
-\NewDocumentCommand{\pex}{g g g}{%
+\NewDocumentCommand{\pex}{m m g}{%
 \IfNoValueTF{#3}{\partial\ln(#1)/\partial\ln(#2)}%
 {\left.\partial\ln(#1)/\partial\ln(#2)\right\vert_{#3}}}
 
@@ -187,13 +189,10 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 % Convergence in distribution
 \newcommand{\dto}{\overset{d}{\to}}
 
-% Essential (to be used with \inf and \sup)
+% Essential (for use with \inf and \sup)
 \DeclareMathOperator*{\ess}{ess}
 
 % ---- Commands for accents ----
-
-% Create custom accents for symbols in math mode
-\usepackage{accents}
 
 % Underbar
 \newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
@@ -238,7 +237,6 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\c{\chi}
 \def\d{\delta}
 \def\D{\Delta}
-\def\uD{\upDelta}
 \def\e{\epsilon}
 \def\ve{\varepsilon}
 \def\f{\phi}
@@ -269,7 +267,7 @@ d\IfValueT{#1}{^{#1}} #2/d #3\IfValueT{#1}{^{#1}}}
 \def\X{\Xi}
 \def\z{\zeta}
 
-% ---- Commands for caligraphic letters ----
+% ---- Commands for calligraphic letters ----
 
 \newcommand{\Ac}{\mathcal{A}}
 \newcommand{\Bc}{\mathcal{B}}
